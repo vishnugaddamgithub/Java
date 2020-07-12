@@ -9,9 +9,10 @@ public class Student {
 			System.out.print("Enter a number: ");
 			int inp=scan.nextInt();
 			scan.close();
-			Student Palindrome = new Student(); 
+			//Student Palindrome = new Student(); 
 			//permutation.permute(str, 0, n-1);
-			Palindrome.palindrm(inp);
+			//Palindrome.palindrm(inp);
+			palindrm(inp);
 		}
 		else if(iDecide==2){
 			//All possible combinations of a string
@@ -20,12 +21,13 @@ public class Student {
 			scan.close();
 		
 			int n = str.length(); 
-			Student permutation = new Student(); 
-			permutation.Combinations(str, 0, n-1);	
+			//Student permutation = new Student(); 
+			//1permutation.Combinations(str, 0, n-1);	
+			Combinations(str, 0, n-1);
 		}
 	
 	}
-	private void palindrm(int inp)
+	private static void palindrm(int inp)
 	{
 		int rev=0,temp=inp;
 		 while(inp != 0) {
@@ -42,7 +44,7 @@ public class Student {
 		}	
 	
 	}
-	private void Combinations(String str, int l, int r) 
+	private static void Combinations(String str, int l, int r) 
 	{ 
 	    if (l == r) 
 	    {
@@ -60,7 +62,7 @@ public class Student {
 	    } 
 	} 
 	
-	public String swap(String a, int i, int j) 
+	public static String swap(String a, int i, int j) 
 	{ 
 	    char temp; 
 	    char[] charArray = a.toCharArray(); 
